@@ -169,7 +169,7 @@
           }
         },
         created() {
-          d3.json('domestic_temp_monitoring.csv').then((data) => {
+          d3.csv('domestic_temp_monitoring.csv').then((data) => {
             this.data = data;
             this.prepareWeekNames();
             this.getWindRange();
